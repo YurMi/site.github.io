@@ -1,0 +1,56 @@
+//=================обнуления====================================
+*{padding: 0;margin: 0;border: 0;}
+*,*:before,*:after{-moz-box-sizing: border-box;-webkit-box-sizing:border-box;box-sizing: border-box;}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+nav,footer,header,aside{display: block;}
+html,body{height: 100%;width: 100%;font-size: 100%; line-height:1; font-size: 14px; -ms-text-size-adjust:100%;}
+input,button,textarea{font-family: inherit;}
+a,a:visited{text-decoration: none;}
+body{	margin:0;padding: 0;}
+h1, h2, h3, h4, h5, h6, p, img { padding: 0; margin: 0; font-size:14px;font-weight: inherit;}
+nav{display: block;}
+ul li{list-style: none;}
+ul{padding: 0;margin:0; display: block;}
+li{display: block;}
+a{text-decoration: none; padding: 0; margin:0; display: block;}
+button{cursor: pointer;padding:0;margin: 0;border:0;}
+input::-ms-clear{display: none;}
+button::-moz-focus-inner{padding:0;border:0;}
+img{vertical-align: top;}
+//=================Шрифты====================================
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+@font-face {font-family:'RobotoSlab-Regular';src: url('../Fonts/robotoslab/RobotoSlab-Regular.eot');src: local('☺'), url('../Fonts/robotoslab/RobotoSlab-Regular.woff') format('woff'), url('../Fonts/robotoslab/RobotoSlab-Regular.ttf') format('truetype'), url('../Fonts/robotoslab/RobotoSlab-Regular.svg') format('svg');font-weight: normal;font-style: normal;}
+@font-face {font-family: 'RobotoThin';src: url('../Fonts/3967.eot');src: local('☺'), url('../Fonts/3967.woff') format('woff'), url('../Fonts/3967.ttf') format('truetype'), url('../Fonts/3967.svg') format('svg');font-weight: normal;font-style: normal;}
+@import url('https://fonts.googleapis.com/css2?family=RobotoSlab&display=swap');
+//================Основной Шрифт========================================
+body{font-family:Roboto; font-weight: 400}
+//================Переменные Брэйкпоинты================
+$md1:2176px;
+$md2:1200px;
+$md3:991px;
+$md4:767px;
+$md5:575px;
+//==============================Основная сетка БрейкПоинтов=============
+.conteiner{
+	margin: 0 auto;
+	justify-content: center;
+	@media (max-width: $md1){   
+		max-width: 1400px;
+	}
+	@media (max-width: $md2){
+		max-width: 1140px;	
+	}
+	@media (max-width: $md3){
+		max-width: 720px;	
+	}
+	@media (max-width: $md4){
+		max-width: 550px;	
+	}
+	@media (max-width: $md5){
+		max-width: 100%;
+		padding: 0 0 0 0;
+	}
+}
+
+                 
